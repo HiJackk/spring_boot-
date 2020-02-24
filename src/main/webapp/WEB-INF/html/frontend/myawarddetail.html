@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>商品详情</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+<link rel="stylesheet"
+	href="../resources/css/frontend/productdetail.css">
+</head>
+<body>
+	<div class="page-group">
+		<div class="page">
+			<header class="bar bar-nav">
+				<a class="button button-link button-nav pull-left" external href="#"
+					onClick="javascript :history.back(-1);" data-transition='slide-out'>
+					<span class="icon icon-left"></span> 返回
+				</a>
+				<h1 class="title" id="award-name"><font color="#FF0000">奖品详情</font></h1>
+			</header>
+			<nav class="bar bar-tab">
+				<a class="tab-item" href="/o2o/frontend/index" external> <span
+					class="icon icon-home"></span> <span class="tab-label">首页</span>
+				</a> <a class="tab-item" href="#" id="me"> <span
+					class="icon icon-me"></span> <span class="tab-label">我</span>
+				</a>
+			</nav>
+			<div class="content infinite-scroll infinite-scroll-bottom"
+				data-distance="100">
+				<!-- 这里是页面内容区 -->
+				<div class="award-detail-dev">
+					<div class="card">
+						<div valign="bottom"
+							class="card-header color-white no-border no-padding">
+							<img class="card-cover" id="award-img" src="" alt="" />
+						</div>
+						<div class="card-content">
+							<div class="card-content-inner">
+								<p class="color-gray">
+									<span id="create-time">2015/01/15</span>
+								</p>
+								<p id="award-desc"></p>
+							</div>
+						</div>
+						<div class="card-img" id="imgList"></div>
+					</div>
+				</div>
+
+
+
+				<div class="list-div"></div>
+			</div>
+		</div>
+
+		<div class="panel-overlay"></div>
+	<div class="panel panel-left panel-reveal" id="panel-right-demo" style="background-image:url('http://47.100.192.135/o2o/upload/images/item/indexbg.jpg');">
+			<div class="content-block">
+			<p>
+					<a href="/o2o/local/login?usertype=1" class="close-panel"><font color="#FF0000">马上登陆</font></a>
+				</p>
+				<p>
+					<a href="/o2o/local/accountbind?usertype=1" class="close-panel"><font color="#FF0000">绑定微信</font></a>
+				</p>
+				<p>
+					<a href="/o2o/local/changepsw?usertype=1" class="close-panel"><font color="#FF0000">密码修改</font></a>
+				</p>
+				<p>
+					<a href="/o2o/frontend/myrecord" class="close-panel"><font color="#FF0000">我的购买</font></a>
+				</p>
+				<p>
+					<a href="/o2o/frontend/mypoint" class="close-panel"><font color="#FF0000">我的积分</font></a>
+				</p>
+				<p>
+					<a href="/o2o/frontend/pointrecord" class="close-panel"><font color="#FF0000">我的兑换</font></a>
+				</p>
+				<p>
+					<a href="#" usertype="1" class="close-panel" id="log-out"><font color="#FF0000">退出登录</font></a>
+				</p>
+				<!-- Click on link with "close-panel" class will close panel -->
+			</div>
+		</div>
+	</div>
+
+
+	<script type='text/javascript'
+		src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/common/common.js'
+		charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/local/logout.js'
+		charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/frontend/myawarddetail.js' charset='utf-8'></script>
+</body>
+</html>
